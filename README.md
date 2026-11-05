@@ -1,6 +1,6 @@
 ﻿# Valentino's Magic Beans — Functional POM
 
-Playwright and TypeScript end-to-end automation for [Valentino's Magic Beans](https://valentinos-magic-beans.click/), using page-organized functions and isolated browser contexts. A separate [class-based implementation](variants/class-based/README.md) covers the same application.
+Playwright and TypeScript end-to-end automation for [Valentino's Magic Beans](https://valentinos-magic-beans.click/), using page-organized functions and isolated browser contexts. Also included is a separate [class-based implementation](variants/class-based/README.md) covers the same application.
 
 ## Setup
 
