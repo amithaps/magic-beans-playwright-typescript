@@ -13,7 +13,8 @@
     "typecheck": "npm run typecheck:functional && npm run typecheck:classes",
     "typecheck:functional": "tsc --project tsconfig.json",
     "typecheck:classes": "tsc --project variants/class-based/tsconfig.json",
-    "auth:dir": "tsx utils/authFileUtils.ts"
+    "auth:dir": "tsx utils/authFileUtils.ts",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@playwright/test": "^1.64.1",
     "@types/node": "^26.6.6",
+    "husky": "^9.1.7",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }

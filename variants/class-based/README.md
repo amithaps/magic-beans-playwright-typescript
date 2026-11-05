@@ -1,4 +1,4 @@
-﻿# Valentino's Magic Beans — Class-based POM
+# Valentino's Magic Beans — Class-based POM
 
 Playwright and TypeScript end-to-end automation using page classes, separate selector dictionaries, and isolated browser contexts. Runs independently of the [functional POM implementation](../../README.md).
 
@@ -21,6 +21,10 @@ npx playwright install chromium
 | `npm run typecheck` | Type-check both implementations |
 | `npx playwright test --config variants/class-based/playwright.config.ts --project=class-auth-setup` | Refresh authentication |
 | `npx playwright show-report playwright-report/class-based` | Open the HTML report |
+
+## Commit checks
+
+Husky runs `npm run typecheck` for both POM implementations before each commit and blocks the commit if either check fails. Browser tests run separately.
 
 ## Architecture
 

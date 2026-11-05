@@ -1,4 +1,4 @@
-﻿# Valentino's Magic Beans — Functional POM
+# Valentino's Magic Beans — Functional POM
 
 Playwright and TypeScript end-to-end automation for [Valentino's Magic Beans](https://valentinos-magic-beans.click/), using page-organized functions and isolated browser contexts. Also included is a separate [class-based implementation](variants/class-based/README.md) covers the same application.
 
@@ -21,6 +21,10 @@ npx playwright install chromium
 | `npx playwright test --project=login-setup` | Prepare the account and refresh authentication |
 | `npx playwright show-report playwright-report/functional` | Open the HTML report |
 | `npm run typecheck` | Type-check both implementations |
+
+## Commit checks
+
+Husky runs `npm run typecheck` for both POM implementations before each commit and blocks the commit if either check fails. Browser tests run separately.
 
 ## Architecture
 
