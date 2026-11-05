@@ -1,0 +1,28 @@
+{
+  "name": "valentino-magic-beans",
+  "version": "1.0.0",
+  "description": "Playwright end-to-end automation using functional and class-based page object models.",
+  "scripts": {
+    "test": "playwright test",
+    "test:functional": "playwright test --config playwright.config.ts",
+    "test:functional:ui": "playwright test --config playwright.config.ts --ui",
+    "test:functional:list": "playwright test --config playwright.config.ts --list",
+    "test:classes": "playwright test --config variants/class-based/playwright.config.ts",
+    "test:classes:ui": "playwright test --config variants/class-based/playwright.config.ts --ui",
+    "test:classes:list": "playwright test --config variants/class-based/playwright.config.ts --list",
+    "typecheck": "npm run typecheck:functional && npm run typecheck:classes",
+    "typecheck:functional": "tsc --project tsconfig.json",
+    "typecheck:classes": "tsc --project variants/class-based/tsconfig.json",
+    "auth:dir": "tsx utils/authFileUtils.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

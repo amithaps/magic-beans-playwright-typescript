@@ -1,0 +1,36 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+/data/.auth
+.playwright-mcp/
+
+# Local credentials and sessions, including backups
+**/.auth/
+.aws/
+.codex/
+.agents/
+
+# Logs and generated build/cache files
+*.log
+*.tsbuildinfo
+coverage/
+.cache/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
